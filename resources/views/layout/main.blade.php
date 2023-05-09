@@ -55,9 +55,11 @@
                     </div>
                     <div class="ms_register_form">
                         <h2>Register / Sign Up</h2>
-                        <form method="post" action="{{route('user.store')}}">
+                        <form method="post" action="{{route('register')}}">
+                            @csrf
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Enter Your Name" class="form-control">
+
                             <span class="form_icon">
 							<i class="fa_icon form-user" aria-hidden="true"></i>
 							</span>
@@ -66,21 +68,23 @@
                             <input type="text" name="email" placeholder="Enter Your Email" class="form-control">
                             <span class="form_icon">
 							<i class="fa_icon form-envelope" aria-hidden="true"></i>
+
 						</span>
                         </div>
                         <div class="form-group">
-                            <input type="password" name="confirm_email" placeholder="Enter Password" class="form-control">
+                            <input type="password" name="password" placeholder="Enter Password" class="form-control">
                             <span class="form_icon">
 						<i class="fa_icon form-lock" aria-hidden="true"></i>
+
 						</span>
                         </div>
                         <div class="form-group">
-                            <input type="password" name="password" placeholder="Confirm Password" class="form-control">
+                            <input type="password" name="password_confirmation" placeholder="Confirm Password" class="form-control">
                             <span class="form_icon">
 						<i class=" fa_icon form-lock" aria-hidden="true"></i>
 						</span>
                         </div>
-                        <button type="submit" class="ms_btn">register now</button>
+                        <input type="submit" class="ms_btn" value="register now">
                         <p>Already Have An Account? <a href="#myModal1" data-toggle="modal"
                                                        class="ms_modal hideCurrentModel">login here</a></p>
                         </form>
@@ -103,14 +107,17 @@
                     </div>
                     <div class="ms_register_form">
                         <h2>login / Sign in</h2>
+                        <form method="post" action="{{route('login')}}">
+                            @csrf
+
                         <div class="form-group">
-                            <input type="text" placeholder="Enter Your Email" class="form-control">
+                            <input type="text" name="email" placeholder="Enter Your Email" class="form-control">
                             <span class="form_icon">
 							<i class="fa_icon form-envelope" aria-hidden="true"></i>
 						</span>
                         </div>
                         <div class="form-group">
-                            <input type="password" placeholder="Enter Password" class="form-control">
+                            <input type="password" name="password" placeholder="Enter Password" class="form-control">
                             <span class="form_icon">
 						<i class="fa_icon form-lock" aria-hidden="true"></i>
 						</span>
@@ -121,12 +128,13 @@
                                 <span class="checkmark"></span>
                             </label>
                         </div>
-                        <a href="profile.html" class="ms_btn" target="_blank">login now</a>
+                        <input type="submit" class="ms_btn" value="login now">
                         <div class="popup_forgot">
                             <a href="#">Forgot Password ?</a>
                         </div>
                         <p>Don't Have An Account? <a href="#myModal" data-toggle="modal"
                                                      class="ms_modal1 hideCurrentModel">register here</a></p>
+                        </form>
                     </div>
                 </div>
             </div>
