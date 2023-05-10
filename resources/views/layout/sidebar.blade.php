@@ -18,7 +18,7 @@
 							<span class="icon icon_discover"></span>
 						</span>
                         <span class="nav_text">
-							discover
+							صفحه اصلی
 						</span>
                     </a>
                 </li>
@@ -27,7 +27,7 @@
 							<span class="icon icon_albums"></span>
 						</span>
                         <span class="nav_text">
-							albums
+							آلبوم ها
 						</span>
                     </a>
                 </li>
@@ -36,7 +36,7 @@
 							<span class="icon icon_artists"></span>
 						</span>
                         <span class="nav_text">
-							artists
+							هنرمندان
 						</span>
                     </a>
                 </li>
@@ -45,7 +45,7 @@
 							<span class="icon icon_genres"></span>
 						</span>
                         <span class="nav_text">
-							genres
+							ژانر
 						</span>
                     </a>
                 </li>
@@ -54,7 +54,7 @@
 							<span class="icon icon_tracks"></span>
 						</span>
                         <span class="nav_text">
-							top tracks
+							ترک های برتر
 						</span>
                     </a>
                 </li>
@@ -63,7 +63,7 @@
 							<span class="icon icon_music"></span>
 						</span>
                         <span class="nav_text">
-							free music
+							موزیک رایگان
 						</span>
                     </a>
                 </li>
@@ -72,7 +72,7 @@
 							<span class="icon icon_station"></span>
 						</span>
                         <span class="nav_text">
-							stations
+							کانال
 						</span>
                     </a>
                 </li>
@@ -83,7 +83,7 @@
 							<span class="icon icon_download"></span>
 						</span>
                         <span class="nav_text">
-							downloads
+							دانلودها
 						</span>
                     </a>
                 </li>
@@ -92,7 +92,7 @@
 							<span class="icon icon_purchased"></span>
 						</span>
                         <span class="nav_text">
-							purchased
+							خریداری شده
 						</span>
                     </a>
                 </li>
@@ -101,7 +101,7 @@
 							<span class="icon icon_favourite"></span>
 						</span>
                         <span class="nav_text">
-							favourites
+							علاقه مندی
 						</span>
                     </a>
                 </li>
@@ -110,7 +110,7 @@
 							<span class="icon icon_history"></span>
 						</span>
                         <span class="nav_text">
-							history
+							تاریخچه
 						</span>
                     </a>
                 </li>
@@ -121,7 +121,7 @@
 							<span class="icon icon_fe_playlist"></span>
 						</span>
                         <span class="nav_text">
-							featured playlist
+							لیست پخش ویژه
 						</span>
                     </a>
                 </li>
@@ -130,7 +130,7 @@
 							<span class="icon icon_c_playlist"></span>
 						</span>
                         <span class="nav_text">
-							create playlist
+							ایجاد لیست پخش
 						</span>
                     </a>
                 </li>

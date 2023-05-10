@@ -1,13 +1,13 @@
-/*--------------------- Copyright (c) 2018 ----------------------- 
-[Master Stylesheet] 
-Project: Miraculous - Online Music Store Html Template 
-Version: 1.0.0 
+/*--------------------- Copyright (c) 2018 -----------------------
+[Master Stylesheet]
+Project: Miraculous - Online Music Store Html Template
+Version: 1.0.0
 Author: Kamleshyadav
- ------------------------------------------------------------------- 
-[Table of contents] 
-1. Body 
-2. Normal Css 
-3. Loader Css 
+ -------------------------------------------------------------------
+[Table of contents]
+1. Body
+2. Normal Css
+3. Loader Css
 4. Nav Css / .ms_sidemenu_wrapper
 5. Header Css / .ms_header
 6. Banner Css / .ms-banner
@@ -28,23 +28,24 @@ Author: Kamleshyadav
 21.Purchase Page Css / .ms_free_download.ms_purchase_wrapper
 22.History Page Css / .ms_top_artist
 23.AddToPlaylist Page Css / .ms_top_artist
-24.Modal Css Start 
+24.Modal Css Start
 25.Edit Profile Page Css / .ms_profile_wrapper
-26.Plans Css / .ms_account_wrapper 
+26.Plans Css / .ms_account_wrapper
 27.Upload Page Css / .ms_upload_wrapper
-28.Language Popup Css 
+28.Language Popup Css
 29.Blog Page Css / .ms_blog_wrapper
 30.Blog Single Page Css / .ms_blog_single_wrapper
 31.Sidebar Css / .ms_sidebar
 -------------------------------------------------------------------*/
 body {
 	margin: 0;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Vazir Mtn', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
 	color: #777777;
 	background-color: #14182a;
+    direction: rtl;
 }
 /*====Normal Css Start====*/
 h1,
@@ -618,7 +619,7 @@ span.nav_text {
 	text-align: center;
 	line-height: 55px;
 	position: absolute;
-	right: -24px;
+	left: -24px;
 	top: 50%;
 	background-color: #1b2039;
 	border-radius: 100%;
@@ -635,7 +636,7 @@ span.nav_text {
 	font-size: 20px;
 	position: absolute;
 	top: 50%;
-	right: 12px;
+	left: 12px;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
@@ -671,7 +672,7 @@ span.nav_text {
 	vertical-align: bottom;
 }
 .ms_sidemenu_wrapper.open_menu a {
-	text-align: left;
+	text-align: right;
 	padding: 9px 20px;
 }
 .ms_sidemenu_wrapper.open_menu span {
@@ -693,8 +694,8 @@ span.nav_text {
 	position: fixed;
 	background-color: #1b2039;
 	padding: 20px 50px;
-	right: 0;
-	left: 80px;
+	left: 0;
+	right: 80px;
 	top: 0;
 	z-index: 1000;
 	backface-visibility: hidden;
@@ -705,16 +706,16 @@ span.nav_text {
 	display: flex;
 	display: inline-block;
 	width: 100%;
-	float: left;
+	float: right;
 }
 .search_icon {
 	position: absolute;
-	right: 0;
+	left: 0;
 	top: 0;
 	height: 40px;
 	line-height: 40px;
 	background-color: #3bc8e7;
-	border-radius: 0px 5px 5px 0px;
+	border-radius: 5px 0px 0px 5px;
 	padding: 0px 16px;
 	cursor: pointer;
 }
@@ -729,9 +730,9 @@ span.nav_text {
 	border-radius: 5px;
 }
 .ms_top_trend {
-	float: left;
+	float: right;
 	line-height: 40px;
-	padding-left: 50px;
+	padding-right: 50px;
 }
 .ms_top_trend a {
 	color: #fff;
@@ -892,10 +893,10 @@ ul.ms_lang_box:after {
 	text-transform: capitalize;
 }
 .veiw_all {
-	float: right;
+	float: left;
 	position: relative;
 	top: 0px;
-	right: 0px;
+	left: 0px;
 }
 .veiw_all a {
 	color: #fff;
@@ -910,7 +911,7 @@ ul.ms_lang_box:after {
 	content: "";
 	position: absolute !important;
 	bottom: 0;
-	left: -15px;
+    right: -15px;
 	z-index: 0;
 	background: -webkit-radial-gradient(50% 50%, ellipse closest-side, #3bc8e7, rgba(255, 42, 112, 0) 60%);
 	background: -moz-radial-gradient(50% 50%, ellipse closest-side, #3bc8e7, rgba(255, 42, 112, 0) 60%);
@@ -930,7 +931,7 @@ ul.ms_lang_box:after {
 	border-radius: 10px;
 }
 .ms_rcnt_box_text {
-	text-align: left;
+	text-align: right;
 	margin-top: 20px;
 }
 .ms_rcnt_box_text h3,
@@ -1000,7 +1001,7 @@ ul.ms_lang_box:after {
 	height: 20px;
 	margin-top: -22px;
 	background-size: 7px 12px;
-	right: -40px;
+	left: -40px;
 }
 .ms_box_overlay {
 	position: absolute;
@@ -1036,7 +1037,7 @@ ul.ms_lang_box:after {
 	height: 40px;
 	background-color: rgba(255, 255, 255, 0.5);
 	top: 0;
-	left: 0;
+	right: 0;
 	content: "";
 	border-radius: 100%;
 	z-index: -1;
@@ -1088,7 +1089,7 @@ ul.ms_lang_box:after {
 .ms_more_icon {
 	position: absolute;
 	top: -10%;
-	right: 20px;
+	left: 20px;
 	cursor: pointer;
 	transition: all 0.4s ease-in-out;
 	-webkit-transition: all 0.4s ease-in-out;
@@ -1114,12 +1115,12 @@ ul.more_option {
 	margin: 0px;
 	position: absolute;
 	top: 5px;
-	right: 50px;
+	left: 50px;
 	background-color: #fff;
 	max-width: 172px;
 	width: 100%;
 	list-style: none;
-	padding: 25px 0px 13px 20px;
+	padding: 25px 11px 13px 0px;
 	text-align: left;
 	border-radius: 10px;
 	z-index: 100;
@@ -1137,14 +1138,14 @@ ul.more_option:after {
 	width: 0;
 	height: 0;
 	top: 9px;
-	right: -9px;
+	left: -9px;
 	border-top: 9px solid transparent;
 	border-bottom: 9px solid transparent;
-	border-left: 9px solid #fff;
+	border-right: 9px solid #fff;
 }
 ul.more_option.open_option {
 	opacity: 1;
-	right: 50px;
+	left: 50px;
 	visibility: visible;
 	transform: translateX(0px);
 	-webkit-transform: translateX(0px);
@@ -1156,7 +1157,7 @@ ul.more_option li {
 	display: block;
 }
 ul.more_option li a {
-	text-align: left !important;
+	text-align:right;
 	color: #777777;
 	padding-bottom: 10px;
 	display: block;
@@ -1167,7 +1168,7 @@ ul.more_option li a:hover,
 	color: #3bc8e7;
 }
 ul.more_option li a .opt_icon {
-	padding-right: 10px;
+	padding-left: 10px;
 }
 ul.more_option li a .opt_icon .icon {
 	width: 16px;
@@ -1226,10 +1227,10 @@ ul.more_option li a:hover .opt_icon .icon_share {
 	position: relative;
 }
 .weekly_left {
-	float: left;
+	float: right;
 }
 .weekly_right {
-	float: right;
+	float: left;
 	position: relative;
 }
 .weekly_left span.w_top_no {
@@ -1237,7 +1238,7 @@ ul.more_option li a:hover .opt_icon .icon_share {
 	font-weight: bold;
 	color: #dedede;
 	display: inline-block;
-	float: left;
+	float: right;
 	width: 50px;
 	line-height: 50px;
 	transition: all 0.3s ease-in-out;
@@ -1251,14 +1252,14 @@ ul.more_option li a:hover .opt_icon .icon_share {
 }
 .w_top_song .w_tp_song_img {
 	width: 50px;
-	float: left;
+	float: right;
 	position: relative;
 	overflow: hidden;
 }
 .w_top_song .w_tp_song_name {
 	width: calc(100% - 50px);
-	float: left;
-	padding-left: 20px;
+	float: right;
+	padding-right: 20px;
 }
 .w_top_song .w_tp_song_img img {
 	border-radius: 5px;
@@ -1287,7 +1288,7 @@ ul.more_option li a:hover .opt_icon .icon_share {
 	opacity: 1;
 }
 .ms_weekly_box ul.more_option {
-	right: 30px;
+	left: 30px;
 	top: 12px;
 }
 .w_top_song .ms_song_overlay {
@@ -1629,7 +1630,7 @@ span.ovrly_text2 {
 }
 .ms_footer_logo {
 	text-align: center;
-	padding-left: 80px;
+	padding-right: 80px;
 	padding-bottom: 25px;
 }
 .ms_footer_logo span {
@@ -1654,7 +1655,7 @@ h1.footer_title:after {
 	content: "";
 	position: absolute !important;
 	bottom: 0;
-	left: -15px;
+    right: -15px;
 	z-index: 0;
 	background: -webkit-radial-gradient(50% 50%, ellipse closest-side, #3bc8e7, rgba(255, 42, 112, 0) 60%);
 	background: -moz-radial-gradient(50% 50%, ellipse closest-side, #3bc8e7, rgba(255, 42, 112, 0) 60%);
@@ -1775,7 +1776,7 @@ h1.footer_title:after {
 	margin-top: 40px;
 	width: 100%;
 	display: inline-block;
-	padding: 0px 0px 0px 80px;
+	padding: 0px 80px 0px 0px;
 }
 .ms_copyright p {
 	color: #ffffff;
@@ -4402,7 +4403,7 @@ h2.widget-title:after {
 /*====Media Css Start====*/
 @media(max-width:1825px) {
 	.ms_top_trend {
-		padding-left: 20px;
+		padding-right: 20px;
 	}
 	.ms_profile .ms_top_btn {
 		width: 67.3%;
@@ -4467,7 +4468,7 @@ h2.widget-title:after {
 		max-width: 20%;
 	}
 	.ms_top_trend {
-		padding-left: 35px;
+		padding-right: 35px;
 	}
 	.jp-progress-container.flex-item {
 		max-width: 50%;
@@ -4560,7 +4561,7 @@ h2.widget-title:after {
 		padding-left: 10px;
 	}
 	.ms_weekly_box ul.more_option {
-		right: 30px;
+		left: 30px;
 		top: 11px;
 	}
 	.ms_top_trend {
@@ -4623,7 +4624,7 @@ h2.widget-title:after {
 		padding-left: 0px;
 	}
 	.w_top_song .w_tp_song_name {
-		padding-left: 15px;
+		padding-right: 15px;
 	}
 	.w_song_time {
 		padding-right: 30px;
@@ -4652,7 +4653,7 @@ h2.widget-title:after {
 		width: 55px;
 	}
 	.footer_box {
-		padding-right: 0px;
+		padding-left: 0px;
 	}
 	.ms_weekly_box {
 		padding: 20px 0px 20px 0px;
@@ -4662,7 +4663,7 @@ h2.widget-title:after {
 		display: none;
 	}
 	.ms_weekly_box ul.more_option {
-		right: 27px;
+		left: 75px;
 		top: 11px;
 	}
 	.jp_queue_wrapper {
@@ -4698,11 +4699,11 @@ h2.widget-title:after {
 		right: 0;
 	}
 	.ms_footer_inner {
-		padding: 0px 80px 2px 140px;
+		padding: 0px 140px 2px 80px;
 	}
 	.ms_content_wrapper {
-		margin-left: 140px;
-		margin-right: 60px;
+		margin-right: 140px;
+		margin-left: 60px;
 	}
 	.ms_weekly_wrapper .col-lg-4.col-md-12 {
 		padding-right: 20px;
@@ -4711,7 +4712,7 @@ h2.widget-title:after {
 	}
 	.ms_releases_wrapper .slider_nav_prev,
 	.ms_releases_wrapper .slider_nav_next {
-		right: 0px;
+		left: 0px;
 	}
 	.ms_input_group2 .ms_input button.ms_btn {
 		font-size: 13px;
@@ -5367,7 +5368,7 @@ h2.widget-title:after {
 		height: auto;
 		line-height: 1;
 		position: fixed;
-		right: 20px;
+		left: 4px;
 		top: 25px;
 		background-color: transparent;
 		transform: none;
@@ -5398,7 +5399,7 @@ h2.widget-title:after {
 	}
 	.ms_sidemenu_wrapper {
 		width: 250px;
-		left: -250px;
+		right: -250px;
 		transition: all 0.5s ease-in-out;
 		-webkit-transition: all 0.5s ease-in-out;
 		-moz-transition: all 0.5s ease-in-out;
@@ -5432,20 +5433,20 @@ h2.widget-title:after {
 		padding-right: 30px;
 	}
 	.ms_sidemenu_wrapper.open_menu {
-		left: 0;
+		right: 0;
 	}
 	.ms_nav_wrapper ul li a {
 		padding: 9px 15px;
 	}
 	.ms_sidemenu_wrapper.open_menu a {
-		text-align: left;
+		text-align: right;
 		padding: 9px 15px;
 	}
 	.ms_nav_wrapper ul li a {
 		text-align: left;
 	}
 	.ms_header {
-		left: 0px;
+        right: 0px;
 	}
 	.ms_content_wrapper {
 		margin-left: 0;
@@ -6193,7 +6194,7 @@ h2.widget-title:after {
 		font-size: 10px;
 	}
 	.ms_top_right {
-		padding-right: 40px;
+		padding-left: 19px;
 	}
 	.weekly_left span.w_top_no {
 		width: 35px;

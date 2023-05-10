@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-{{--    <title>@yield('title')</title>--}}
+    <title>@yield('title')</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="description" content="Music">
@@ -37,7 +37,7 @@
     <!----Footer Start---->
     @include('layout.footer')
     <!----Audio Player Section---->
-    @include('layout.player')
+{{--    @include('layout.player')--}}
 </div>
 <!----Register Modal Start---->
 <!-- Modal -->
