@@ -54,39 +54,39 @@
                         <img src="images/register_img.png" alt="" class="img-fluid"/>
                     </div>
                     <div class="ms_register_form">
-                        <h2>Register / Sign Up</h2>
+                        <h2>ثبت نام</h2>
                         <form method="post" action="{{route('register')}}">
                             @csrf
                         <div class="form-group">
-                            <input type="text" name="name" placeholder="Enter Your Name" class="form-control">
+                            <input type="text" name="name" placeholder="نام و نام خانوادگی" class="form-control">
 
                             <span class="form_icon">
 							<i class="fa_icon form-user" aria-hidden="true"></i>
 							</span>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="email" placeholder="Enter Your Email" class="form-control">
+                            <input type="text" name="email" placeholder="ایمیل" class="form-control">
                             <span class="form_icon">
 							<i class="fa_icon form-envelope" aria-hidden="true"></i>
 
 						</span>
                         </div>
                         <div class="form-group">
-                            <input type="password" name="password" placeholder="Enter Password" class="form-control">
+                            <input type="password" name="password" placeholder="گذرواژه" class="form-control">
                             <span class="form_icon">
 						<i class="fa_icon form-lock" aria-hidden="true"></i>
 
 						</span>
                         </div>
                         <div class="form-group">
-                            <input type="password" name="password_confirmation" placeholder="Confirm Password" class="form-control">
+                            <input type="password" name="password_confirmation" placeholder="تایید گذرواژه" class="form-control">
                             <span class="form_icon">
 						<i class=" fa_icon form-lock" aria-hidden="true"></i>
 						</span>
                         </div>
-                        <input type="submit" class="ms_btn" value="register now">
-                        <p>Already Have An Account? <a href="#myModal1" data-toggle="modal"
-                                                       class="ms_modal hideCurrentModel">login here</a></p>
+                        <input type="submit" class="ms_btn custom_login_btn" value="ثبت نام">
+                        <p>حساب کاربری دارید؟ <a href="#myModal1" data-toggle="modal"
+                                                       class="ms_modal hideCurrentModel">ورود</a></p>
                         </form>
                     </div>
                 </div>
@@ -106,34 +106,34 @@
                         <img src="images/register_img.png" alt="" class="img-fluid"/>
                     </div>
                     <div class="ms_register_form">
-                        <h2>login / Sign in</h2>
+                        <h2>ورود</h2>
                         <form method="post" action="{{route('login')}}">
                             @csrf
 
                         <div class="form-group">
-                            <input type="text" name="email" placeholder="Enter Your Email" class="form-control">
+                            <input type="text" name="email" placeholder="ایمیل" class="form-control">
                             <span class="form_icon">
 							<i class="fa_icon form-envelope" aria-hidden="true"></i>
 						</span>
                         </div>
                         <div class="form-group">
-                            <input type="password" name="password" placeholder="Enter Password" class="form-control">
+                            <input type="password" name="password" placeholder="گذرواژه" class="form-control">
                             <span class="form_icon">
 						<i class="fa_icon form-lock" aria-hidden="true"></i>
 						</span>
                         </div>
                         <div class="remember_checkbox">
-                            <label>Keep me signed in
+                            <label>به خاطر بسپار
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                             </label>
                         </div>
-                        <input type="submit" class="ms_btn" value="login now">
+                        <input type="submit" class="ms_btn custom_login_btn " value="ورود">
                         <div class="popup_forgot">
-                            <a href="#">Forgot Password ?</a>
+                            <a href="#">فراموشی رمز</a>
                         </div>
-                        <p>Don't Have An Account? <a href="#myModal" data-toggle="modal"
-                                                     class="ms_modal1 hideCurrentModel">register here</a></p>
+                        <p>حساب کاربری ندارید؟ <a href="#myModal" data-toggle="modal"
+                                                     class="ms_modal1 hideCurrentModel">ثبت نام</a></p>
                         </form>
                     </div>
                 </div>

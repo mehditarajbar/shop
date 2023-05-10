@@ -1662,6 +1662,7 @@ h1.footer_title:after {
 	background: -ms-radial-gradient(50% 50%, ellipse closest-side, #3bc8e7, rgba(255, 42, 112, 0) 60%);
 	background: -o-radial-gradient(50% 50%, ellipse closest-side, #3bc8e7, rgba(255, 42, 112, 0) 60%);
 }
+
 .footer_box p {
 	color: #ffffff;
 	line-height: 25px;
@@ -1782,6 +1783,7 @@ h1.footer_title:after {
 	color: #ffffff;
 	margin: 0px;
 	padding: 20px 0px;
+    direction: ltr;
 }
 .ms_copyright p a {
 	color: #3bc8e7;
@@ -3160,8 +3162,17 @@ span.ms_frequency {
 .modal-dialog.login_dialog .modal-content .ms_register_form {
 	padding-top: 25px;
 }
+.custom_login_btn{
+    line-height: 0px;
+    border: 1px solid gray;
+}
+.custom_login_btn:hover{
+    cursor: pointer;
+    color: #ffffff;
+    box-shadow: 0px 0px 20px 0px #1b2039;
+}
 .ms_register_form .form-control {
-	padding: 3px 30px 0px 20px;
+	padding: 3px 30px 0px 40px;
 }
 .fa_icon {
 	background-image: url(../images/svg/play_icon.svg);
@@ -3226,7 +3237,7 @@ i.fa_icon.form_close {
 }
 .ms_register_form .form-group span.form_icon {
 	position: absolute;
-	right: 0;
+	left: 10px;
 	top: 5px;
 }
 i.fa_icon.form-user {

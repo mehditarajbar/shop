@@ -15,7 +15,9 @@
            @if(Auth::check())
                <x-dropdown alt="right" width="48">
                    <x-slot name="trigger">
-                       <input type="button" class="ms_btn reg_btn" value="{{Auth::user()->name}}">
+                       <button class="ms_btn reg_btn custom_login_btn">
+                           <div>{{ Auth::user()->name }}</div>
+                       </button>
                    </x-slot>
                    <x-slot name="content">
                        <x-dropdown-link :href="route('profile.edit')">
