@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
     <!-- Favicon Link -->
     <link rel="shortcut icon" type="image/png" href="{{asset('images/favicon.png')}}">
+    @vite(['resources/js/app.js'])
     @yield('style')
 </head>
 <body>

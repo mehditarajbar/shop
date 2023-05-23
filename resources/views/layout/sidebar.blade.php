@@ -77,64 +77,67 @@
                     </a>
                 </li>
             </ul>
-            <ul class="nav_downloads">
-                <li><a href="download.html" title="Downloads">
+            @if(Auth::check())
+                <ul class="nav_downloads">
+                    <li><a href="download.html" title="Downloads">
 						<span class="nav_icon">
 							<span class="icon icon_download"></span>
 						</span>
-                        <span class="nav_text">
+                            <span class="nav_text">
 							دانلودها
 						</span>
-                    </a>
-                </li>
-                <li><a href="purchase.html" title="Purchased">
+                        </a>
+                    </li>
+                    <li><a href="purchase.html" title="Purchased">
 						<span class="nav_icon">
 							<span class="icon icon_purchased"></span>
 						</span>
-                        <span class="nav_text">
+                            <span class="nav_text">
 							خریداری شده
 						</span>
-                    </a>
-                </li>
-                <li><a href="favourite.html" title="Favourites">
+                        </a>
+                    </li>
+                    <li><a href="favourite.html" title="Favourites">
 						<span class="nav_icon">
 							<span class="icon icon_favourite"></span>
 						</span>
-                        <span class="nav_text">
+                            <span class="nav_text">
 							علاقه مندی
 						</span>
-                    </a>
-                </li>
-                <li><a href="history.html" title="History">
+                        </a>
+                    </li>
+                    <li><a href="history.html" title="History">
 						<span class="nav_icon">
 							<span class="icon icon_history"></span>
 						</span>
-                        <span class="nav_text">
+                            <span class="nav_text">
 							تاریخچه
 						</span>
-                    </a>
-                </li>
-            </ul>
-            <ul class="nav_playlist">
-                <li><a href="feature_playlist.html" title="Featured Playlist">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav_playlist">
+                    <li><a href="feature_playlist.html" title="Featured Playlist">
 						<span class="nav_icon">
 							<span class="icon icon_fe_playlist"></span>
 						</span>
-                        <span class="nav_text">
+                            <span class="nav_text">
 							لیست پخش ویژه
 						</span>
-                    </a>
-                </li>
-                <li><a href="add_playlist.html" title="Create Playlist">
+                        </a>
+                    </li>
+                    <li><a href="add_playlist.html" title="Create Playlist">
 						<span class="nav_icon">
 							<span class="icon icon_c_playlist"></span>
 						</span>
-                        <span class="nav_text">
+                            <span class="nav_text">
 							ایجاد لیست پخش
 						</span>
-                    </a>
-                </li>
-            </ul>
+                        </a>
+                    </li>
+                </ul>
+            @endif
+
         </div>
     </div>
 </div>

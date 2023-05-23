@@ -15,22 +15,24 @@
            @if(Auth::check())
                <x-dropdown alt="right" width="48">
                    <x-slot name="trigger">
-                       <button class="ms_btn reg_btn custom_login_btn">
-                           <div>{{ Auth::user()->name }}</div>
+                       <button class="ms_btn reg_btn custom_login_btn" style="width: 70px">
+                           <div><i class="fa fa-user-circle"></i></div>
                        </button>
                    </x-slot>
                    <x-slot name="content">
+                       <div class="custom-dropdown">
                        <x-dropdown-link :href="route('profile.edit')">
-                           {{__('Profile')}}
+                           {{__('پروفایل')}}
                        </x-dropdown-link>
                        <form method="POST" action="{{ route('logout') }}">
                            @csrf
                            <x-dropdown-link :href="route('logout')"
                                             onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                               {{ __('Log Out') }}
+                               {{ __('خروج') }}
                            </x-dropdown-link>
                        </form>
+                       </div>
                    </x-slot>
                </x-dropdown>
             @else
