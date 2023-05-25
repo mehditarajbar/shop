@@ -19,6 +19,13 @@
                 </div>
             </div>
 
+            <div>
+
+asdasd
+                <a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=277604&amp;Code=m3Gg4VtzITef6V452VFZ"><img referrerpolicy="origin" src="https://Trustseal.eNamad.ir/logo.aspx?id=277604&amp;Code=m3Gg4VtzITef6V452VFZ" alt="" style="cursor:pointer" id="m3Gg4VtzITef6V452VFZ"></a>
+
+
+            </div>
         </div>
     </div>
     <!----Copyright---->
